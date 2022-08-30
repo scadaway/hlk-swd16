@@ -1,0 +1,29 @@
+<script type="text/javascript">
+  RED.nodes.registerType('hlk-sw16',{
+      category: 'scadaway',
+      color: '#a6bbcf',
+      defaults: {
+          ip: {value:""},
+          port: {value:""}
+      },
+      inputs:1,
+      outputs:1,
+      icon: "file.png",
+      label: "hlk-sw16 comm"
+  });
+</script>
+
+<script type="text/html" data-template-name="hlk-sw16">
+  <div class="form-row">
+      <label for="node-input-ip"><i class="fa fa-tag"></i> IP</label>
+      <input type="text" id="node-input-ip" placeholder="IP">
+  </div>
+  <div class="form-row">
+      <label for="node-input-port"><i class="fa fa-tag"></i> Port</label>
+      <input type="text" id="node-input-port" placeholder="Port">
+  </div>
+</script>
+
+<script type="text/html" data-help-name="hlk-sw16">
+  <p>Connectoion to hlk-sw16</p>
+</script>
